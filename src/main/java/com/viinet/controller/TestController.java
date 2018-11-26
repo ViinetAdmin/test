@@ -28,14 +28,15 @@ public class TestController {
         return "SUCCESS";
     }
 
-    @GetMapping("hello")
-    public String hello() {
-        return "hello";
-    }
 
     @GetMapping("foo")
     public String foo() {
         return "foo";
+    }
+
+    @GetMapping("bar")
+    public String bar() {
+        return "bar";
     }
 
 }
