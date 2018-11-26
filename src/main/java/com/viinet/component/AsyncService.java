@@ -17,7 +17,6 @@ public class AsyncService {
     private final static String url = "http://127.0.0.1:5556/advertise/test/1";
 
     @Async("asyncThreadPoolTaskExecutor")
-    @Scheduled(fixedRate = 1)
     public void sendRequest() throws Exception {
         System.out.println("current thread name -1: " + Thread.currentThread().getName());
         int count = 1000;
